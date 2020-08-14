@@ -1,12 +1,12 @@
 <nav class="navbar navbar-dark bg-dark">
   <a class="navbar-brand" routerLink="/">
     <img src="assets/img/logo-savjee.svg" width="30" height="30" class="d-inline-block align-top" alt="">
-    &nbsp;SavjeeCoin
+    &nbsp;VilchezUnac
   </a>
 
   <div>
     <button routerLink="/new/transaction/pending" class="btn btn-outline-light" *ngIf="thereArePendingTransactions()">
-      Pending transactions
+      Transacciones pendientes
       <span class="badge badge-light">{{blockchain.pendingTransactions.length}}</span>
     </button>
     &nbsp;
@@ -15,7 +15,7 @@
     </button>
     &nbsp;
     <button routerLink="/new/transaction" class="btn btn-outline-light">
-      Create transaction
+      Crear transacción
     </button>
   </div>
 </nav>
@@ -24,8 +24,8 @@
 
 <div class="container" *ngIf="showInfoMessage === true">
   <div class="alert alert-primary alert-dismissible fade show" role="alert">
-    <h4 class="alert-heading">First things first.</h4>
-    This tool gives you the ability to look behind-the-scenes of a blockchain. You can create transactions, mine blocks and see how they all work together. Go ahead, make some transactions, mine a block, tweak the settings and see the effects of your actions in real-time.
+    <h4 class="alert-heading">Lo primero es lo primero.</h4>
+    Esta herramienta le brinda la posibilidad de mirar detrás de escena de una cadena de bloques. Puede crear transacciones, extraer bloques y ver cómo funcionan todos juntos. Continúe, realice algunas transacciones, extraiga un bloque, modifique la configuración y vea los efectos de sus acciones en tiempo real.
     <hr>
     <a href="https://github.com/Savjee/savjeecoin-frontend">Source code</a> - Based on <a href="https://github.com/SavjeeTutorials/SavjeeCoin">my Javascript blockchain</a>.
     <button type="button" class="close" data-dismiss="alert" aria-label="Close" (click)="dismissInfoMessage()">

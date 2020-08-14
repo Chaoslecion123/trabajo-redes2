@@ -1,6 +1,6 @@
 <div class="container">
-	<h1>Create transaction</h1>
-	<p>Transfer some money to someone!</p>
+	<h1>Crear transacción</h1>
+	<p>¡Transfiere dinero a alguien!</p>
 
 	<br>
 
@@ -8,7 +8,7 @@
 	    <label for="fromAddress">From address</label>
 	    <input type="text" class="form-control" id="fromAddress" aria-describedby="fromAddressHelp" [(ngModel)]="ownWalletKey.publicKey" disabled>
 	    <small id="fromAddressHelp" class="form-text text-muted">
-	    	This is your wallet address. You cannot change it because you can only spend your own coins.
+	    	Esta es la dirección de su billetera. No puede cambiarlo porque solo puede gastar sus propias monedas.
 	    </small>
   	</div>
 
@@ -16,7 +16,7 @@
 	    <label for="toAddress">To address</label>
 	    <input type="text" class="form-control" id="toAddress" aria-describedby="toAddressHelp" [(ngModel)]="newTx.toAddress">
 	    <small id="toAddressHelp" class="form-text text-muted">
-	    	The address of the wallet where you want to send the money to. You can type random text here (if you are not interested in recovering the funds)
+			La dirección de la billetera a la que desea enviar el dinero. Puede escribir texto aleatorio aquí (si no está interesado en recuperar los fondos)
 	    </small>
   	</div>
 
@@ -24,10 +24,10 @@
 	    <label for="amount">Amount</label>
 	    <input type="number" class="form-control" id="amount" aria-describedby="amountHelp" [(ngModel)]="newTx.amount">
 	    <small id="amountHelp" class="form-text text-muted">
-	    	You can transfer any amount. Account balance is not checked in this demo. Have at it!
+			Puedes transferir cualquier cantidad. El saldo de la cuenta no se verifica en esta demostración. ¡Tienen en él!
 	    </small>
   	</div>
 
-  	<button (click)="createTransaction()" type="submit" class="btn btn-primary">Sign & create transaction</button>
+  	<button (click)="createTransaction()" type="submit" class="btn btn-primary">Sign & Crear transacción</button>
 
 </div>
